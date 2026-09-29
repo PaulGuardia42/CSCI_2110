@@ -1,8 +1,8 @@
-
 import java.util.*;
+
 public class BubbleSort{
 
-    public int[] sort(int[] arr){ //TODO
+    public int[] sort(int[] arr){
         // sort and return the integer arr of size n
 
         display(arr);
@@ -20,7 +20,6 @@ public class BubbleSort{
         }
 
         display(arr);
-
         return arr;
     }
 
@@ -29,5 +28,6 @@ public class BubbleSort{
         for(int i : arr){
             System.out.print(i + " ");
         }
+        System.out.println();
     }
 }
