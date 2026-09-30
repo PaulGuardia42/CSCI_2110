@@ -1,3 +1,8 @@
+/*
+ * Student: Paul Guardia
+ * ID: B00821183
+ * */
+
 import java.util.*;
 
 public class BubbleSort{
@@ -5,7 +10,7 @@ public class BubbleSort{
     public int[] sort(int[] arr){
         // sort and return the integer arr of size n
 
-        display(arr);
+//        display(arr);
         int swap;
 
         for(int i = 0; i < arr.length - 1; i++){
@@ -19,7 +24,7 @@ public class BubbleSort{
             }
         }
 
-        display(arr);
+//        display(arr);
         return arr;
     }
 
