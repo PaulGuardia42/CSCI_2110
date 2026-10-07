@@ -8,14 +8,35 @@ public class Exercise1 {
 
         System.out.print("Enter a positive integer: ");
         long value = scanner.nextInt();
-
-        System.out.print("The Collatz sequence for n = " + value + " is ");
-        while(value != 1){
-            value = evenOrOdd(value);
-            if(value == 1) System.out.print(value);
-            else System.out.print(value + ", ");
+        long count = 0;
+        long sequenceLength = 0;
+        for(int i = 0; i < value; i++){
+            sequenceLength = collatzSequence(value);
+            if(sequenceLength > count){
+                count = sequenceLength;
+            }
         }
 
+
+        System.out.println("For n="+ value +", the starting number of the longest Collatz sequence is 3\n" +
+                "and the length of the longest sequence is " + count + ".");
+
+    }
+
+    public static long collatzSequence(long value){
+        long counter = 0;
+//        System.out.print("The Collatz sequence for n = " + value + " is ");
+        while(value != 1){
+            value = evenOrOdd(value);
+            if(value == 1) {
+//                System.out.print(value);
+            }
+            else {
+//                System.out.print(value + ", ");
+                counter++;
+            }
+        }
+        return counter;
     }
 
     public static long evenOrOdd(long n){
