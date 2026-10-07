@@ -7,15 +7,12 @@ import java.util.Random;
 
 public class Main {
 
-
-
     public static void main(String[] args) {
         BubbleSort bubbleSort = new BubbleSort();
         SelectionSort selectionSort = new SelectionSort();
-
-
         Random random = new Random();
 
+//        Simulation of both sorting algorithms to create graphs
         for(int i = 0; i < 20; i++){
             int randomArraySize1 = random.nextInt(5000 - 10 + 1) + 10;  // 10 to 5000
             int[] array1 = new int[randomArraySize1];

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="csci2110">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/B00821183_lab_2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/boardgame_csci_2110_paul_guardia_B00821183.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
